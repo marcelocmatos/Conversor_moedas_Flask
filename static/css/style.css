@@ -14,6 +14,8 @@ body {
 	height: 90vh;
 }
 
+
+
 .container2 {
 	text-align: center;
 	padding: 20px;
@@ -22,6 +24,15 @@ body {
 	color: white;
 	font-size: 20px;
 	margin-left: 100px;
+}
+
+fieldset {
+	margin-bottom: 30px;
+}
+
+form legend {
+	font-size: 20px;
+	margin: 0 0 10px;
 }
 
 .input-padrao {
@@ -42,7 +53,7 @@ body {
 	cursor: pointer;
 }
 
-.enviar:hover {
+	.enviar:hover {
 		background: #9692a6;
 		color: black;
 		border-radius: 20px;
