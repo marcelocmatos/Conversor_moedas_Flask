@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../static/css/reset.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <title>
+            Imersão Dev - Aula 01
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="page-title">
+                Conversor de moedas
+            </h1>
+            <p class="page-subtitle">
+                Descubra os valores em dolar U$
+            </p>
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+
+            <div class="container2">
+                <form method="post" action="/">
+                    <p>Digite o valor a ser convertido em dólares:</p><br>
+                    <input type="text" name="valor_a_converter" class="input-padrao" required><br><br>
+                    <button type="submit" value="Submit" class="enviar">Enviar</button>
+                </form>
+                <div class="retorno">
+                    {% if valor_a_converter %}
+                    <p>O valor convertido é R${{valor_a_converter}}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <a href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        </a>
+
+
+        <footer>
+            <p class="copyright">&copy; Copyright Marcelo Cabral de Matos - 2021</p>
+        </footer>
+
+    </body>
+</html>
