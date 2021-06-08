@@ -1,4 +1,4 @@
-class Moeda():
+class Moeda:
     def __init__(self, moedas1):
         self.moedas = moedas1
 
@@ -8,6 +8,7 @@ class Moeda():
 
         if dinheiro == 'Peso Argentino':
             moeda1 = 'ARS'
+
         elif dinheiro == 'Dólar Australiano':
             moeda1 = 'AUD'
 
@@ -47,7 +48,6 @@ class Moeda():
         elif dinheiro == 'Iene Japonês':
             moeda1 = 'JPY'
 
-
         elif dinheiro == 'Ripple':
             moeda1 = 'XRP'
 
@@ -57,12 +57,19 @@ class Moeda():
 
 
 if __name__ == '__main__':
-    moedas = 'Remimbi'
-    dados_moeda = Moeda.pega_moeda(moedas)
-    cod_moeda = dados_moeda[0]
-    convert_moeda = dados_moeda[1]
-    print(cod_moeda)
-    print(convert_moeda)
+    moeda_de = 'Ripple'
+    moeda_para ='Iene Japonês'
+    dados_moeda_de = Moeda.pega_moeda(moeda_de)
+    dados_moeda_para = Moeda.pega_moeda(moeda_para)
+    cod_moeda_de = dados_moeda_de[0]
+    convert_moeda_de = dados_moeda_de[1]
+    cod_moeda_para = dados_moeda_para[0]
+    convert_moeda_para = dados_moeda_para[1]
+
+    print(cod_moeda_de)
+    print(convert_moeda_de)
+    print(cod_moeda_para)
+    print(convert_moeda_para)
 
     '''
     requisicao = requests.get(f'https://economia.awesomeapi.com.br/all/{cod_moeda}')
